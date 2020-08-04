@@ -1,8 +1,17 @@
-from flask import Flask, url_for, render_template
+import flask
+from flask import Flask, redirect, url_for, render_template, request
 
-app = FLASK(__name__)
+app = Flask(__name__)
 
 #always do set FLASK_APP=website.py in command first
 
 @app.route('/')
-    def index():
+def home():
+    return render_template('index.html')
+
+@app.route('/kitty/')
+def kitty():
+    return render_template('kitty.html')
+
+if __name__ == '__main__':
+    app.run(debug = True)

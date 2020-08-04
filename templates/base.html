@@ -1,11 +1,20 @@
 <!doctype html>
-<html>
+<html lang="en" dir="ltr">
     <head>
-        {% block head %}
-        <link rel="stylesheet" href=""{{ url_for('static', filename='style.css') }}">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
         <title>{% block title %}{% endblock %} - My Website</title>
+        {% block hero %}{% endblock %}
     </head>
     <body>
-
+        <h1>My Website</h1>
+        <strong>
+            <nav>
+                <ul>
+                    <li><a href="{{url_for('home') }}">Home</a></li>
+                    <li><a href="{{url_for('kitty') }}">Kitty</a></li>
+                </ul>
+            </nav>
+        </strong>
     </body>
 </html>
