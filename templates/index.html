@@ -7,9 +7,32 @@
         <title>My Website</title>
     </head>
 
-    <body>
-        <div><a href={{ url_for('kitty') }}><img src="static/tacocat.bmp" alt="TacocaT"></a>
-        <div><h1> HELLO WORLD </h1></div>
+    <body class="wholepagemargin";>
+        <header>
+          <div class="bannerbox"><img src="{{url_for('static', filename='cutechonk.jpg')}}">
+            <div class="bannerboxtext">Welcome! Welcome</div>
+          </div>
+            <div id="header">
+                <div class="banner-container">
+                    <img src="/static/tacocat.bmp" alt="TacocaT"></a>
+                </div>
+            </div>
+        </header>
+
+      <div>
+          <h1>HELLO THERE</h1>
+          <p>Welcome to my Website! It is currently under construction. Keep checking back for more content!</p>
+          <img src="{{url_for('static', filename='daydreamer.jpg')}}">
+          <p class="poem">
+            I am the cat -
+            on this rail I lean.
+            I watch the waves
+            and I dream and I dream.
+            The breeze, the sun -
+            for what more could I wish?
+            Well I would just love a great big fish!
+          </p>
+      </div>
         <table>
             <tr>
                 <th> </th>
