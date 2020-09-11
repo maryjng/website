@@ -1,0 +1,26 @@
+<!doctype HTML>
+<html>
+    <meta charset="utf-8"></meta>
+    <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+      <title>My Website</title>
+    </head>
+    <body class="content-container">
+      <header class="banner-container">
+        <img class="banner" src={{ url_for('static', filename='images/daydreamer.jpg') }}>
+        <div class="banner-txt"> HELLO AND WELCOME !</div>
+      </header>
+      <div #firstnav class="nav-container">
+        <img class="nav-icon" src={{ url_for('static', filename='images/tacocat.bmp')}}>
+        <img class="nav-icon" src="" alt="">
+        <img class="nav-icon" src="" alt="">
+        <img class="nav-icon" src="" alt="">
+      </div>
+      {% block content %}
+      {% endblock %}
+
+
+
+    </body>
+
+</html>

@@ -1,44 +1,11 @@
-<!doctype HTML>
-<html>
-    <meta charset="utf-8"></meta>
+{% extends "base.html" %}
 
-    <head>
-        <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
-        <title>My Website</title>
-    </head>
+{% block content %}
 
-    <body class="wholepagemargin";>
-        <header>
-          <div class="bannerbox"><img src="{{url_for('static', filename='cutechonk.jpg')}}">
-            <div class="bannerboxtext">Welcome! Welcome</div>
-          </div>
-            <div id="header">
-                <div class="banner-container">
-                    <img src="/static/tacocat.bmp" alt="TacocaT"></a>
-                </div>
-            </div>
-        </header>
-
-      <div>
-          <h1>HELLO THERE</h1>
-          <p>Welcome to my Website! It is currently under construction. Keep checking back for more content!</p>
-          <img src="{{url_for('static', filename='daydreamer.jpg')}}">
-          <p class="poem">
-            I am the cat -
-            on this rail I lean.
-            I watch the waves
-            and I dream and I dream.
-            The breeze, the sun -
-            for what more could I wish?
-            Well I would just love a great big fish!
-          </p>
-      </div>
-        <table>
-            <tr>
-                <th> </th>
-                <td> </td>
-            </tr>
-        </table>
-    </body>
-
-</html>
+<p class="heading">Welcome to my Website! It is currently under construction. Keep checking back for more content!</p>
+<div class="boxlinks">
+  <p class="boxlinks">If you are interested about the website's creator, please click here. </p>
+  <p class="boxlinks">...or if you want to see some photos, click here! </p>
+  <p class="boxlinks">...or if you are interested in cats, check this out! </p>
+</div>
+{% endblock %}
