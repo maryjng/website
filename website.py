@@ -13,5 +13,17 @@ def home():
 def kitty():
     return render_template('kitty.html')
 
+@app.route('/aboutme/')
+def aboutme():
+    return render_template('aboutme.html')
+
+@app.route('/photos/')
+def photos():
+    return render_template('photos.html')
+
+@app.route('/art/')
+def art():
+    return render_template('art.html')
+
 if __name__ == '__main__':
-    app.run(debug = True)
+    app.run(debug=True)
