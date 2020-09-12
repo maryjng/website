@@ -2,6 +2,7 @@ body {
   background-color: #DDDDD2;
   margin: 30px 10%;
   border: double #C0C1B7;
+  color: #292C31;
 }
 
 .content-container {
@@ -11,8 +12,8 @@ body {
 }
 
 .nav-container {
-  background-color: #CFCFC3;
-  border-bottom: outset 10px #CBDBF3;
+  background-color: #D3D4CD;
+  border-bottom: outset 10px #DBE6F7;
 
 }
 
@@ -50,8 +51,6 @@ img.banner {
 
 p {
   font-family: times new roman;
-  padding-right: 15%;
-
 }
 
 hr.solid {
@@ -59,8 +58,10 @@ hr.solid {
 }
 
 .heading {
-  font-size: 20px;
+  font-size: 35px;
   font-weight: bold;
+  font-style: italic;
+  text-align: center;
 }
 
 .boxlinks{
@@ -76,7 +77,11 @@ p.boxlinks{
   width: 100%;
 }
 
-.photos{
-  width: 30%;
-  padding: 3.3%;
+div > img {
+  width: 250px;
+  padding: 15px;
+}
+
+#intro {
+  margin: 10px 35px;
 }

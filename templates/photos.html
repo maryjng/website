@@ -1,27 +1,38 @@
-{% extends base.html %}
+{% extends "base.html" %}
 
 {% block content %}
-<p class="banner-txt">DO YOU LIKE FLOWERS?</p>
-<p>I used to frequent the botanical gardens of Central Park when I still lived in NYC. I took a lot of pictures of the plants, mostly the flowers. There were a lot. I hope you enjoy them, too.</p>
+<p class="heading">DO YOU LIKE FLOWERS?</p>
+<p id="intro">I used to frequent the botanical gardens of Central Park when I still lived in NYC. I took a lot of pictures of the plants, mostly the flowers. There were a lot. I hope you enjoy them, too.</p>
 
-<div class= >
-  <table class="photos">
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </table>
+<div>
+  <img src={{ url_for('static', filename='images/flower1.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower2.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower3.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower4.jpg') }}>
+</div>
+<div>
+  <img src={{ url_for('static', filename='images/flower5.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower6.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower19.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower8.jpg') }}>
+</div>
+<div>
+  <img src={{ url_for('static', filename='images/flower9.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower10.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower11.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower12.jpg') }}>
+</div>
+<div>
+  <img src={{ url_for('static', filename='images/flower13.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower25.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower15.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower24.jpg') }}>
+</div>
+<div>
+  <img src={{ url_for('static', filename='images/flower18.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower17.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower21.jpg') }}>
+  <img src={{ url_for('static', filename='images/flower20.jpg') }}>
 </div>
 
 {% endblock %}
